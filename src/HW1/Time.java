@@ -42,12 +42,11 @@ public class Time {
         System.out.println("%");
 
         // compute the elapsed time since I've started this exercise
-        System.out.print("The elapsed time since I've started this exercise: ");
-        System.out.print(hour1 - hour);
-        System.out.print(":");
-        System.out.print(minute1 - minute);
-        System.out.print(":");
-        System.out.println(second1 - second);
+        // convert the new time in seconds
+        System.out.print("The elapsed time (in seconds) since I've started this exercise: ");
+        double a1 = hour1 * 3600;
+        double b1 = minute1 * 60;
+        System.out.println(a1 + b1 + second1);
 
 
 
